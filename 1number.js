@@ -1,0 +1,11 @@
+"Use strict";
+const firstNumber = 567;
+const secondNumber = firstNumber % 10;
+const x = firstNumber % 100;
+const therdNumber = (x - secondNumber) / 10;
+const fourthNumber = (firstNumber - x) / 100;
+const sum = fourthNumber + therdNumber + secondNumber;
+const mult = fourthNumber * therdNumber * secondNumber;
+console.log('число:',firstNumber);
+console.log('сумма:',sum);
+console.log('произведение', mult);
