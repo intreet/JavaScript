@@ -1,10 +1,4 @@
 
-  
-//    let save_button = document.querySelector("#saved_button")
-//    let placeholder = document.querySelector("#placeholder")
-//    let task = document.querySelector(".task")
-
-
 
      function create_title(title) { 
         let names = document.querySelector('#to_do_name')
@@ -81,8 +75,7 @@ function task_saved()
           taskin()
         }
 
-        // create_title("мой список")
-        // taskin()
+    
     }
 
     function taskin() {
