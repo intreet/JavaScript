@@ -1,16 +1,9 @@
 "use Strict"
+function create_task() {
     let save_button = document.querySelector('#saved_button')
     let placeholder = document.querySelector('#placeholder')
     let task = document.querySelector('.task')
 
-// function create_title(title) { 
-//     let names = document.querySelector('#to_do_name')
-//     names.innerHTML = title
-//     return names
-// }
-
-function button_click() {
-    
     if (placeholder.value.length == 0) {
         alert("пожалуйста введите вашу задачу")
     }else {
@@ -43,8 +36,19 @@ function button_click() {
       
 }
 
-function taskin() {
-    save_button.onclick = button_click;
+function create_title(title) { 
+    let names = document.querySelector('#to_do_name')
+    names.innerHTML = title
+    return names
+}
+function task_saved() {
+    create_title("мамин список")
+    create_task
+    taskin()
 }
 
-taskin()
+function taskin() {
+    save_button.onclick = create_task;
+}
+task_saved()
+
