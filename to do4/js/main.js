@@ -63,10 +63,10 @@ function task_saved()
         let id = Element.id
         let mom = document.querySelector("#mom_list")
         let ded = document.querySelector('#ded_list')
-        if (id != mom) {
+        if (id = mom) {
           create_title("мамин список")
           taskin()
-        }if (id != ded){
+        }else if (id = ded){
           create_title("папин список")
           taskin()
         }
@@ -77,6 +77,8 @@ function task_saved()
 
     
     }
+   let local = localStorage.getItem("save", taskin())
+    alert(local)
 
     function taskin() {
         let save_button = document.querySelector('#saved_button')
