@@ -77,8 +77,6 @@ function task_saved()
 
     
     }
-   let local = localStorage.getItem("save", taskin())
-    alert(local)
 
     function taskin() {
         let save_button = document.querySelector('#saved_button')
