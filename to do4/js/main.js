@@ -39,6 +39,7 @@
                 let delete_task = document.querySelectorAll('#button_Delete')
                 let complite_task = document.querySelectorAll('#complite_button')
                 
+                placeholder.value = ''
                 for (let i = 0; i < delete_task.length; i++) {
                     delete_task[i].onclick = function() {
                         this.parentNode.remove()
