@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Студенты</title>
+  </head>
+  <link rel="stylesheet" href="1111.css" />
+  <body>
+    <h1>Список студентов</h1>
+
+    <div id="add-student-modal" class="modal">
+      <div class="modal-content">
+        <h2>Добавление нового студента</h2>
+        <form id="add-student-form">
+          <label for="first-name">Имя:</label>
+          <input type="text" id="first-name" name="first-name">
+    
+          <label for="last-name">Фамилия:</label>
+          <input type="text" id="last-name" name="last-name">
+    
+          <label for="middle-name">Отчество:</label>
+          <input type="text" id="middle-name" name="middle-name">
+    
+          <label for="birthdate">Дата рождения:</label>
+          <input type="date" id="birthdate" name="birthdate">
+    
+          <label for="start-year">Год поступления:</label>
+          <input type="text" id="start-year" name="start-year">
+    
+          <label for="facultet">Факультет:</label>
+          <input type="text" id="facultet" name="facultet">
+    
+          <button type="submit">Добавить</button>
+          <button type="button">Отмена</button>
+        </form>
+      </div>
+    </div>
+    <button id="add-student-button">Добавить студента</button>
+
+    <table id="students-table">
+      <thead>
+        <tr>
+          <th data-sortby="firstName" data-sortdir="asc">Имя</th>
+          <th data-sortby="lastName" data-sortdir="asc">Фамилия</th>
+          <th data-sortby="middleName" data-sortdir="asc">Отчество</th>
+          <th data-sortby="birthdate" data-sortdir="asc">Дата рождения</th>
+          <th data-sortby="startYear" data-sortdir="asc">Год поступления</th>
+          <th data-sortby="facultet" data-sortdir="asc">Факультет</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <script src="table.js"></script>
+  </body>
+</html>
