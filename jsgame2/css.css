@@ -1,0 +1,21 @@
+.main{
+  text-align: center;
+  background-color: rgb(163, 181, 181);
+  
+}
+.h1{
+  background-color: rgb(163, 181, 181);
+  text-align: center;
+  color:#3605f9;
+}
+.bod{
+  background-color:rgb(163, 181, 181);
+}
+.button{
+  background-color:lightpink;
+  border-radius: 5px;
+  width: 500px;
+  height: 100px;
+  color: #3605f9; 
+  border-color: grey;
+}
